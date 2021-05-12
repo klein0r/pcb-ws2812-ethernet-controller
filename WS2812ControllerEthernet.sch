@@ -1,0 +1,310 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "WS2812-Controller Ethernet"
+Date "2021-05-12"
+Rev "0.1"
+Comp "haus-automatisierung.com"
+Comment1 "Matthias Kleine"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L haus-automatisierung:WT32_ETH01 U1
+U 1 1 609C1901
+P 3550 2600
+F 0 "U1" H 3900 2550 50  0000 C CNN
+F 1 "WT32_ETH01" H 3950 2450 50  0000 C CNN
+F 2 "halibs:WT32_ETH01" H 3550 2600 50  0001 C CNN
+F 3 "http://www.wireless-tag.com/wp-content/uploads/2020/08/WT32-ETH01%E8%A7%84%E6%A0%BC%E4%B9%A6V1.2EN%EF%BC%88%E8%8B%B1%E6%96%87%EF%BC%89.pdf" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 4400
+NoConn ~ 3100 2950
+NoConn ~ 3100 3050
+NoConn ~ 3100 3150
+NoConn ~ 3100 3250
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 609CA4F6
+P 3350 6250
+F 0 "J2" H 3450 6550 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3400 6450 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 3350 6250 50  0001 C CNN
+F 3 "~" H 3350 6250 50  0001 C CNN
+	1    3350 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 609BFD92
+P 2800 1450
+F 0 "#PWR04" H 2800 1200 50  0001 C CNN
+F 1 "GND" H 2805 1277 50  0000 C CNN
+F 2 "" H 2800 1450 50  0001 C CNN
+F 3 "" H 2800 1450 50  0001 C CNN
+	1    2800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 609C088E
+P 2800 1150
+F 0 "#PWR03" H 2800 1000 50  0001 C CNN
+F 1 "+5V" H 2815 1323 50  0000 C CNN
+F 2 "" H 2800 1150 50  0001 C CNN
+F 3 "" H 2800 1150 50  0001 C CNN
+	1    2800 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1250 1650 1250
+Wire Wire Line
+	2800 1250 2800 1150
+Wire Wire Line
+	1550 1350 1650 1350
+Wire Wire Line
+	2800 1350 2800 1450
+Wire Notes Line
+	1050 800  3050 800 
+Wire Notes Line
+	3050 800  3050 1750
+Wire Notes Line
+	3050 1750 1050 1750
+Wire Notes Line
+	1050 1750 1050 800 
+Text Notes 1050 800  0    50   ~ 0
+Power Supply
+Text GLabel 4200 3850 2    50   Input ~ 0
+GPIO2
+Wire Wire Line
+	4000 3850 4200 3850
+Text GLabel 2300 6250 0    50   Output ~ 0
+GPIO2
+$Comp
+L Device:R R1
+U 1 1 609C33CD
+P 2650 6250
+F 0 "R1" V 2443 6250 50  0000 C CNN
+F 1 "R" V 2534 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2580 6250 50  0001 C CNN
+F 3 "~" H 2650 6250 50  0001 C CNN
+	1    2650 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 6250 2500 6250
+Wire Wire Line
+	2800 6250 3150 6250
+$Comp
+L power:GND #PWR06
+U 1 1 609C3DBF
+P 2900 6650
+F 0 "#PWR06" H 2900 6400 50  0001 C CNN
+F 1 "GND" H 2905 6477 50  0000 C CNN
+F 2 "" H 2900 6650 50  0001 C CNN
+F 3 "" H 2900 6650 50  0001 C CNN
+	1    2900 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6650 2900 6350
+Wire Wire Line
+	2900 6350 3150 6350
+$Comp
+L power:+5V #PWR05
+U 1 1 609C45D7
+P 2900 5850
+F 0 "#PWR05" H 2900 5700 50  0001 C CNN
+F 1 "+5V" H 2915 6023 50  0000 C CNN
+F 2 "" H 2900 5850 50  0001 C CNN
+F 3 "" H 2900 5850 50  0001 C CNN
+	1    2900 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5850 2900 6150
+Wire Wire Line
+	2900 6150 3150 6150
+$Comp
+L power:+5V #PWR01
+U 1 1 609C586A
+P 1700 5850
+F 0 "#PWR01" H 1700 5700 50  0001 C CNN
+F 1 "+5V" H 1715 6023 50  0000 C CNN
+F 2 "" H 1700 5850 50  0001 C CNN
+F 3 "" H 1700 5850 50  0001 C CNN
+	1    1700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 609C5FAE
+P 1700 6650
+F 0 "#PWR02" H 1700 6400 50  0001 C CNN
+F 1 "GND" H 1705 6477 50  0000 C CNN
+F 2 "" H 1700 6650 50  0001 C CNN
+F 3 "" H 1700 6650 50  0001 C CNN
+	1    1700 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 609C6B5C
+P 1700 6250
+F 0 "C1" H 1818 6296 50  0000 L CNN
+F 1 "CP" H 1818 6205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 1738 6100 50  0001 C CNN
+F 3 "~" H 1700 6250 50  0001 C CNN
+	1    1700 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6100 1700 5850
+Wire Wire Line
+	1700 6400 1700 6650
+Wire Notes Line
+	1400 5550 3750 5550
+Wire Notes Line
+	3750 5550 3750 7000
+Wire Notes Line
+	3750 7000 1400 7000
+Wire Notes Line
+	1400 7000 1400 5550
+Text Notes 1400 5550 0    50   ~ 0
+Addressable Strip Connection
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 609C9690
+P 1350 1250
+F 0 "J1" H 1458 1531 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1458 1440 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 1350 1250 50  0001 C CNN
+F 3 "~" H 1350 1250 50  0001 C CNN
+	1    1350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1150 1650 1150
+Wire Wire Line
+	1650 1150 1650 1250
+Wire Wire Line
+	1550 1450 1650 1450
+Wire Wire Line
+	1650 1450 1650 1350
+Connection ~ 1650 1350
+Wire Wire Line
+	1650 1350 2800 1350
+$Comp
+L Device:Fuse F1
+U 1 1 609CF3A7
+P 2200 1250
+F 0 "F1" V 2003 1250 50  0000 C CNN
+F 1 "Fuse" V 2094 1250 50  0000 C CNN
+F 2 "" V 2130 1250 50  0001 C CNN
+F 3 "~" H 2200 1250 50  0001 C CNN
+	1    2200 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1250 2050 1250
+Connection ~ 1650 1250
+Wire Wire Line
+	2350 1250 2800 1250
+$Comp
+L power:+5V #PWR08
+U 1 1 609D06AE
+P 3650 2400
+F 0 "#PWR08" H 3650 2250 50  0001 C CNN
+F 1 "+5V" H 3665 2573 50  0000 C CNN
+F 2 "" H 3650 2400 50  0001 C CNN
+F 3 "" H 3650 2400 50  0001 C CNN
+	1    3650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2400 3650 2750
+$Comp
+L power:GND #PWR07
+U 1 1 609D11F6
+P 3550 4700
+F 0 "#PWR07" H 3550 4450 50  0001 C CNN
+F 1 "GND" H 3555 4527 50  0000 C CNN
+F 2 "" H 3550 4700 50  0001 C CNN
+F 3 "" H 3550 4700 50  0001 C CNN
+	1    3550 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4400 3550 4700
+NoConn ~ 3750 4400
+NoConn ~ 3650 4400
+NoConn ~ 3450 4400
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 609D2DD4
+P 1550 3950
+F 0 "J3" H 1658 4231 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1658 4140 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1550 3950 50  0001 C CNN
+F 3 "~" H 1550 3950 50  0001 C CNN
+	1    1550 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3950 3100 3950
+Wire Wire Line
+	1750 4050 3100 4050
+$Comp
+L power:+5V #PWR09
+U 1 1 609D72C4
+P 2100 3650
+F 0 "#PWR09" H 2100 3500 50  0001 C CNN
+F 1 "+5V" H 2115 3823 50  0000 C CNN
+F 2 "" H 2100 3650 50  0001 C CNN
+F 3 "" H 2100 3650 50  0001 C CNN
+	1    2100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3650 2100 3850
+Wire Wire Line
+	2100 3850 1750 3850
+$Comp
+L power:GND #PWR010
+U 1 1 609D829B
+P 2100 4350
+F 0 "#PWR010" H 2100 4100 50  0001 C CNN
+F 1 "GND" H 2105 4177 50  0000 C CNN
+F 2 "" H 2100 4350 50  0001 C CNN
+F 3 "" H 2100 4350 50  0001 C CNN
+	1    2100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4150 2100 4150
+Wire Wire Line
+	2100 4150 2100 4350
+Text Label 1900 3950 0    50   ~ 0
+TX
+Text Label 1900 4050 0    50   ~ 0
+RX
+Text Label 2950 6250 0    50   ~ 0
+DATA
+NoConn ~ 4000 4050
+NoConn ~ 4000 3750
+NoConn ~ 4000 3650
+NoConn ~ 4000 3550
+NoConn ~ 4000 3450
+NoConn ~ 4000 3150
+NoConn ~ 4000 3050
+NoConn ~ 4000 2950
+NoConn ~ 3100 3650
+NoConn ~ 3100 3750
+NoConn ~ 3100 3450
+$EndSCHEMATC
