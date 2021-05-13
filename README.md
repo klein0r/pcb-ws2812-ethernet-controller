@@ -10,6 +10,10 @@ Control your addressable LED with custom software like [WLED](https://github.com
 
 - C1: Capacitor Radial 3.8mm 1000μF 6.3
 - F1: Stelvio Kontek STV PTF/75 + Fuse 5x20mm, 5A (max. 6A)
+- J1: PHC 1725672 - MPT 0,5 / 4-2,54
+- J2: PHC 1725669 - MPT 0,5 / 3-2,54
+- J3: 1x4 2.54mm Male Pin Headers (for flashing - soldering not required)
+- J4: 1x2 2.54mm Male Pin Headers (for flashing - jumper)
 - U1: WT32-ETH01
 
 ## GPIO
