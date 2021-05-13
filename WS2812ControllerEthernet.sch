@@ -206,7 +206,7 @@ U 1 1 609CF3A7
 P 2200 1250
 F 0 "F1" V 2003 1250 50  0000 C CNN
 F 1 "Fuse" V 2094 1250 50  0000 C CNN
-F 2 "" V 2130 1250 50  0001 C CNN
+F 2 "halibs:Fuse-PTF75_Stelvio" V 2130 1250 50  0001 C CNN
 F 3 "~" H 2200 1250 50  0001 C CNN
 	1    2200 1250
 	0    1    1    0   
@@ -297,7 +297,6 @@ RX
 Text Label 2950 6250 0    50   ~ 0
 DATA
 NoConn ~ 4000 4050
-NoConn ~ 4000 3750
 NoConn ~ 4000 3650
 NoConn ~ 4000 3550
 NoConn ~ 4000 3450
@@ -306,5 +305,51 @@ NoConn ~ 4000 3050
 NoConn ~ 4000 2950
 NoConn ~ 3100 3650
 NoConn ~ 3100 3750
-NoConn ~ 3100 3450
+Text Label 1750 1250 0    50   ~ 0
+SUPPLY
+NoConn ~ 4000 3750
+Text GLabel 2850 3450 0    50   Input ~ 0
+IO0
+Wire Wire Line
+	2850 3450 3100 3450
+Text GLabel 4500 6350 0    50   Output ~ 0
+IO0
+$Comp
+L power:GND #PWR011
+U 1 1 609E1B66
+P 4900 6650
+F 0 "#PWR011" H 4900 6400 50  0001 C CNN
+F 1 "GND" H 4905 6477 50  0000 C CNN
+F 2 "" H 4900 6650 50  0001 C CNN
+F 3 "" H 4900 6650 50  0001 C CNN
+	1    4900 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 609E3035
+P 5400 6450
+F 0 "J4" H 5372 6332 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5372 6423 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 6450 50  0001 C CNN
+F 3 "~" H 5400 6450 50  0001 C CNN
+	1    5400 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 6450 4900 6450
+Wire Wire Line
+	4900 6450 4900 6650
+Wire Wire Line
+	5200 6350 4500 6350
+Wire Notes Line
+	4200 7000 6200 7000
+Wire Notes Line
+	6200 7000 6200 6050
+Wire Notes Line
+	6200 6050 4200 6050
+Wire Notes Line
+	4200 6050 4200 7000
+Text Notes 4200 6050 0    50   ~ 0
+Flashing
 $EndSCHEMATC
