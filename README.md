@@ -15,6 +15,7 @@ Control your addressable LED with custom software like [WLED](https://github.com
 - J3: 1x4 2.54mm Male Pin Headers (for flashing - soldering not required)
 - J4: 1x2 2.54mm Male Pin Headers (for flashing - jumper)
 - U1: WT32-ETH01
+- R1: Resistor 0805 330
 
 [Component list (Affiliate-Link)](https://haus-auto.com/p/rei/ListeWS2812Eth)
 
