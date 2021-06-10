@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WS2812-Controller Ethernet"
-Date "2021-05-12"
-Rev "0.1"
+Date "2021-06-10"
+Rev "0.2"
 Comp "haus-automatisierung.com"
 Comment1 "Matthias Kleine"
 Comment2 ""
