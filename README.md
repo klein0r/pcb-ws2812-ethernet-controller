@@ -8,6 +8,8 @@ Control your addressable LED with custom software like [WLED](https://github.com
 
 ![PCB Preview](https://raw.githubusercontent.com/klein0r/pcb-ws2812-ethernet-controller/master/preview.png)
 
+![PCB Photo](https://raw.githubusercontent.com/klein0r/pcb-ws2812-ethernet-controller/master/previewReal.jpg)
+
 ## Components
 
 - WT32-ETH01 ESP32
