@@ -12,28 +12,29 @@ Control your addressable LED with custom software like [WLED](https://github.com
 
 ## Components
 
-- WT32-ETH01 ESP32
+- U1: WT32-ETH01 ESP32
 - C1: Capacitor Radial 3.8mm 1000μF 6.3
 - F1: Stelvio Kontek STV PTF/75 + Fuse 5x20mm, 5A (max. 6A)
 - J1: PHC 1725672 - MPT 0,5 / 4-2,54
-- J2: PHC 1725669 - MPT 0,5 / 3-2,54
+- J2: PHC 1725672 - MPT 0,5 / 4-2,54
 - J3: 1x4 2.54mm Male Pin Headers (for flashing - soldering not required)
 - J4: 1x2 2.54mm Male Pin Headers (for flashing - jumper)
-- U1: WT32-ETH01
 - U2: SN74AHCT125DR
 - R1: Resistor 0805 330
+- R2: Resistor 0805 330
 
 [Component list (Affiliate-Link)](https://haus-auto.com/p/rei/ListeWS2812Eth)
 
 ## GPIO
 
-- GPIO2 = Data line of addressable strip
+- GPIO2 = Data line 1 of addressable strip
+- GPIO4 = Data line 2 of addressable strip
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2023 Matthias Kleine <info@haus-automatisierung.com>
+Copyright (c) 2024 Matthias Kleine <info@haus-automatisierung.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
