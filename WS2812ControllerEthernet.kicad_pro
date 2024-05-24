@@ -504,7 +504,7 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Fet",
+        "netclass": "Default",
         "pattern": "+5V"
       },
       {
