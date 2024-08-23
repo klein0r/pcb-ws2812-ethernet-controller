@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "WS2812-Controller Ethernet")
-		(date "2024-05-24")
-		(rev "1.1")
+		(date "2024-08-23")
+		(rev "2.0")
 		(company "haus-automatisierung.com")
 		(comment 1 "Matthias Kleine")
 	)
@@ -3731,7 +3731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "haus-automatisierung:WT32_ETH01"
+		(property "Footprint" "haus-automatisierung:WT32_ETH01_long"
 			(at 99.06 68.58 0)
 			(effects
 				(font
