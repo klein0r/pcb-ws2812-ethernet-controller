@@ -8,7 +8,7 @@ Control your addressable LED with custom software like [WLED](https://github.com
 
 The [WT32-ETH01](https://en.wireless-tag.com/product-item-2.html) has been released in different revisions. This adapter has been tested with revision 1.2 (length of the WT32-ETH01 PCB is ~5.5 cm).
 
-**Some revisions may not fit!** I've received a photo of revision 1.4 with a PCB length of ~6.0 cm.
+**Some revisions may not fit!** I've received a photo of revision 1.4 with a PCB length of ~6.0 cm. Use PCB version 2.0 (or later) of this project to ensure the adapter will fit.
 
 ## Preview
 
