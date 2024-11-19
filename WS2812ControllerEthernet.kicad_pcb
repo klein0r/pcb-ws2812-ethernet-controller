@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "WS2812-Controller Ethernet")
-		(date "2024-08-23")
+		(date "2024-08-27")
 		(rev "2.0")
 		(company "haus-automatisierung.com")
 		(comment 1 "Matthias Kleine")
@@ -5900,11 +5900,21 @@
 		)
 	)
 	(gr_line
-		(start 132.334 67.945)
-		(end 160.782 67.945)
+		(start 133.625541 71.245)
+		(end 159.490001 71.245)
 		(stroke
 			(width 0.12)
-			(type dash_dot)
+			(type dash_dot_dot)
+		)
+		(layer "B.SilkS")
+		(uuid "3e207fbd-9a68-404f-88bd-f1b9e261ebeb")
+	)
+	(gr_line
+		(start 133.625541 67.945)
+		(end 159.490001 67.945)
+		(stroke
+			(width 0.12)
+			(type dash_dot_dot)
 		)
 		(layer "B.SilkS")
 		(uuid "c08fdffa-27ca-4308-a49a-56184c16529c")
@@ -6128,7 +6138,7 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "v2.0"
+	(gr_text "v2.1"
 		(at 151.875 106.675 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-0000609ca093")
@@ -6466,6 +6476,14 @@
 		(uuid "81fa7f67-e433-41da-bc08-577fbbe6519e")
 	)
 	(segment
+		(start 140.525 75.910001)
+		(end 141.595 76.980001)
+		(width 1.5)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "a04c4a87-e456-4c87-a8bf-2fbbb33ecedb")
+	)
+	(segment
 		(start 138.9395 51.756999)
 		(end 139.060001 51.8775)
 		(width 1.5)
@@ -6512,6 +6530,14 @@
 		(layer "B.Cu")
 		(net 1)
 		(uuid "d7a7bd9d-cdff-419a-877e-710d1954b6a5")
+	)
+	(segment
+		(start 140.525 62)
+		(end 140.525 75.910001)
+		(width 1.5)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "e4038401-6285-4806-9809-c24b12b1039a")
 	)
 	(via
 		(at 154.051 95.758)

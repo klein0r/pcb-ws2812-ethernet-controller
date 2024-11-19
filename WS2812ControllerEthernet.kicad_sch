@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "WS2812-Controller Ethernet")
-		(date "2024-08-23")
-		(rev "2.0")
+		(date "2024-08-27")
+		(rev "2.1")
 		(company "haus-automatisierung.com")
 		(comment 1 "Matthias Kleine")
 	)
